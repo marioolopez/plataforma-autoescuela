@@ -1,17 +1,66 @@
-Este es un proyecto final de ciclo que simula la web de una Autoescuela... con la idea de fomentar las actividades online para tener una mayor felixibilidad horaria a la hora de hacer tareas durante el día.
+# Plataforma Web de Autoescuela
 
-Es un proyecto que esta desarrollado en FRONTEND con el framework de ANGULAR(typescript). En el utilizo modelos, rutas para cada componente y servicios que conectan 
-los endpoints con las rutas que hay en el BACKEND.
+## Descripción
 
-En el BACKEND utilizo Node.Js y Express en donde utilizo servicios en los que implemento métodos para coger información de la BBDD, crear, actualizar, eliminar o mostrar.
-Todos estos servicios lo guardo en una carpeta llamada CONTROLLERS (que es donde de donde conecto con la base de datos para sacar a traves de métodos información dentro de ella).
+Proyecto final del Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM), basado en el desarrollo de una aplicación web full stack para la gestión y realización de tests de conducción.
 
-De los controladores pasan a las rutas... que es de donde para cada metodo del CONTROLLERS tiene su ruta conectada a ese método.
-Y en las rutas se conecta a través del HttpClient al servicio del FRONT. 
+La plataforma tiene como objetivo facilitar el aprendizaje online, permitiendo a los alumnos realizar exámenes y consultar sus resultados de forma flexible. Además, incorpora funcionalidades de administración para gestionar usuarios, asignaturas, preguntas y exámenes.
 
-En donde llega la información en forma de métodos que creamos con las rutas que definimos en el BACKEND.
+## Tecnologías utilizadas
 
-Como BBDD relacional, utilizó MySQL. Debido a la facilidad que tiene y lo visual que me parece.
-En general ha sido un proyecto bueno, aunque en algunas partes ha habido complicaciones en la implementación. Pero se ha terminado sacando.
+**Frontend**
+- Angular
+- TypeScript
+- HTML y CSS
+- Angular Router
+- HttpClient
 
-He terminado aprendiendo mucho sobre este proyecto.
+**Backend**
+- Node.js
+- Express.js
+- JavaScript
+- Sequelize (ORM)
+- API REST
+
+**Base de datos**
+- MySQL
+
+## Arquitectura y funcionamiento
+
+La aplicación sigue una arquitectura cliente-servidor que separa el frontend, el backend y la persistencia de datos.
+
+**Frontend (Angular)**
+
+La interfaz está desarrollada con Angular y organizada mediante componentes, modelos, servicios y rutas.
+
+Los servicios utilizan HttpClient para realizar peticiones HTTP a los endpoints del backend, permitiendo consultar y gestionar la información de manera dinámica.
+
+**Backend (Node.js y Express)**
+
+El servidor implementa una API REST estructurada mediante rutas, controladores y modelos.
+
+Las rutas definen los endpoints disponibles y los conectan con los controladores, donde se implementa la lógica de negocio y las operaciones necesarias para gestionar los datos.
+
+Se utiliza Sequelize como ORM para interactuar con MySQL y gestionar las relaciones entre las diferentes entidades.
+
+**Base de datos (MySQL)**
+
+Se utiliza una base de datos relacional para almacenar y organizar la información de usuarios, asignaturas, exámenes, preguntas y resultados.
+
+## Funcionalidades principales
+
+- Registro e inicio de sesión de usuarios.
+- Gestión de usuarios con diferentes roles: administrador, profesor y alumno.
+- Creación, consulta, modificación y eliminación de asignaturas, preguntas y exámenes.
+- Realización de tests con corrección automática de respuestas.
+- Cálculo y almacenamiento de calificaciones.
+- Consulta de resultados de los exámenes realizados.
+- Panel de administración para gestionar los contenidos de la plataforma.
+
+## Aprendizajes y desarrollo
+
+Este proyecto me ha permitido aplicar los conocimientos adquiridos durante el ciclo formativo y profundizar en el desarrollo de aplicaciones web full stack.
+
+Durante su implementación he trabajado con la comunicación entre frontend y backend mediante una API REST, la organización del código en diferentes capas y la gestión de bases de datos relacionales con Sequelize.
+
+También he afrontado diferentes retos técnicos que me han ayudado a mejorar mis habilidades de resolución de problemas, depuración de errores y desarrollo de software.
